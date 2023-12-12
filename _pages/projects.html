@@ -1,0 +1,43 @@
+---
+layout: archive
+title: "Projects and Research Experience"
+permalink: /projects/
+author_profile: true
+feature_row:
+  - image_path: /assets/img/mess-i.jpg
+    alt: "Digital mess"
+    title: 'Mess-i'
+    excerpt: 'A digital mess management platform to save time and redue paperwork and waste. Implemented an API service using MongoDB and Flask alongside a Flutter tablet application for mess workers to verify student meal eligibility. '
+    url: "https://github.com/DevCom-IITB/mess-i-dashboard"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+  - image_path: /assets/img/git.jpg
+    alt: "Growth India Telescope"
+    title: 'Telescope Archiver'
+    excerpt: '**Guide: <a href="https://www.phy.iitb.ac.in/en/content/varun-bhalerao">Prof. Varun Bhalerao</a>, IIT Bombay**. An intuitive image query interface using Django, VueJS, and NGINX to facilitate seamless data analysis. Enhanced search functionality for equatorial coordinates by leveraging the HEALPix system.'
+  - image_path: /assets/img/comet.jpg
+    alt: "comet"
+    title: 'Confirmation of COMET C/2022 N1 and Asteroid 2022 MY2'
+    excerpt: '**Guide: <a href="https://www.phy.iitb.ac.in/en/content/varun-bhalerao">Prof. Varun Bhalerao</a>, IIT Bombay**. I observed the <a href="https://minorplanetcenter.net/mpec/K22/K22N47.html">COMET C/2022 N1 (Attard-Maury)</a> and <a href="https://minorplanetcenter.net/mpec/K22/K22MA6.html">Asteroid 2022 MY2</a> using the Growth India Telescope in Ladakh and confirmed their orbits, leading to their discovery. '
+  - image_path: /assets/img/course_reco.jpg
+    alt: "CourseReco"
+    title: 'Course Recommendation System'
+    excerpt: "A course recommendation system using collaborative filtering and matrix decomposition. Uses Wandb for hyperparameter tuning."
+    url: "https://github.com/AdithyaKrishnaK/CS419"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+  - image_path: /assets/img/digipad.jpg
+    alt: "DigiPad"
+    title: 'DigiPad'
+    excerpt: "An app for online teaching that allows writing on a desktop using a homemade stylus and smartphone. Developed with Flutter, uses a socket-based service for smooth data transmission from the mobile app to the desktop over WiFi, with advanced detection of finger movements and gestures."
+    url: "https://github.com/DevCom-IITB/digipad-flutter"
+    btn_label: "Code"
+    btn_class: "btn--primary"
+
+---
+
+{% for post in site.posts limit: 5 %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include feature_row id="feature_row" type="left" %}
